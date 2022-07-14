@@ -9,6 +9,7 @@ public class QuizGame {
 		int score =0;
 		// ASK A QUESTION AND CHECK THE ANSWER
 		String input = JOptionPane.showInputDialog("What was the name of the first president?");
+		        System.out.println();
 				// 2.  Ask the user a question 
 				
 				// 3.  Use an if statement to check if their answer is correct
@@ -19,7 +20,8 @@ public class QuizGame {
 				
 		
 		//  ASK A QUESTION AND CHECK THE ANSWER
-				String B = JOptionPane.showInputDialog("What color is the sky?");		
+				String B = JOptionPane.showInputDialog("What color is the sky?");
+				System.out.println();
 				//     Use an if statement to check if their answer is correct
 				if(B.equalsIgnoreCase("blue")) {
 					score +=1;
@@ -27,7 +29,8 @@ public class QuizGame {
 				
 				
 			//  ASK A QUESTION AND CHECK THE ANSWER
-			String n = JOptionPane.showInputDialog("Am i 12?");	
+			String n = JOptionPane.showInputDialog("Am i 12?");
+			     System.out.println();
 				// 3.  Use an if statement to check if their answer is correct
 				if(n.equalsIgnoreCase("no")) {
 					
@@ -39,6 +42,6 @@ public class QuizGame {
 		
 		
 		// After all the questions have been asked, tell the user their final score 
-		
+		JOptionPane.showMessageDialog(null,"Here is your score "+score); 
 	}
 }
